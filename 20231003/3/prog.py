@@ -1,14 +1,10 @@
 from math import *
 
-def Calc(s, t, u):
-    def s(x):
-        return eval(s)
-    def t(x):
-        return eval(t)
-    def u(x, y):
-        return eval(u)
+def a(s,t,u):
+    x=lambda x:eval(s)
+    y=lambda y:eval(t)
+    w=lambda x,y:eval(u)
+    return lambda t: w(x(t),y(t))
 
-    return lambda x: u(s(x), t(x))
-
-
-print(Calc(*eval(input()))(eval(input())))
+op,x=eval(input()), eval(input())
+print(a(*op)(x))
