@@ -1,9 +1,11 @@
-sum = 0
-i = int(input())
-while i > 0 and sum < 21:
-    sum += i
-    print(sum)
-    i = int(input())
+s=0
+a=eval(input())
+s+=a
+while(s<=21):
+    if(a<=0):
+        print(a)
+        break
+    a=eval(input())
+    s+=a
 else:
-    print(i)
-
+    print(s)
