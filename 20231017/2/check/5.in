@@ -1,0 +1,7 @@
+:f2xm1 x 2**x-1
+f2xm1 16
+:fortytwo 42
+:nop 0
+f2xm1 0.5
+fortytwo
+quit "{} / {}"

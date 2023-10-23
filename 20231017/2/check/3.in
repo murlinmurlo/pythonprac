@@ -1,0 +1,6 @@
+:func x tan(x)
+func pi/4
+:func x "{}".format(tan(x))
+func pi/4
+:quit msg msg
+quit "end"

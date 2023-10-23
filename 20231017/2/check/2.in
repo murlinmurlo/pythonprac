@@ -1,0 +1,5 @@
+:quadratic a b c x (a*x+b*x)*x+c/x
+:divmod x y divmod(x,y)
+quadratic 1 -4 4 2
+divmod 1337 69
+quit "{}:{}"
