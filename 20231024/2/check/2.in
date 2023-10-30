@@ -1,0 +1,1 @@
+print(*slide("SAMPLETEXT", 6), sep='')
