@@ -1,0 +1,23 @@
+a, b = Omnibus(), Omnibus()
+del a.k
+del a.k
+del a.k
+del a.k
+del a.k
+del a.k
+del a.k
+del a.k
+del b.k
+del a.k
+del b.k
+b.k = a.k = a.k = a.k = True
+b.k = 9
+b.k = b.k = False
+print(a.k, a.k, b.k, b.k)
+del a.k, b.k
+print(b.k, b.k)
+del a.k
+a.h = 10923874
+print(a.k, b.k)
+a.k = 777
+print(a.k, a.h, b.k) 

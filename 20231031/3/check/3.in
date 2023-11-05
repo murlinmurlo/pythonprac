@@ -1,0 +1,8 @@
+m = Maze(10)
+for i in range(10):
+    for j in range(2, 8):
+        m[i,j : (j+i)%10,max(2*i - j, 0)] = '·'
+        m[j,i : 7,abs(j-i)%10] = '█'
+    print(m[3,i : 6,i], end = '-')
+print()
+print(m)
