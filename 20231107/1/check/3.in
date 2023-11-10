@@ -1,0 +1,4 @@
+a = DivStr("abraCaDabrA")
+print(* a.swapcase() // 8)
+print(* a.lower()% 2)
+print(* a % 7 // 5, a[:10:4] % 42)

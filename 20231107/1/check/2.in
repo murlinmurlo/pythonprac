@@ -1,0 +1,5 @@
+a = DivStr("lolKEKcheburek")
+print(* a.swapcase() // 8)
+print(* a.lower() // 4)
+print(a % 2)
+print(* a % 3 // 1, a[:16:1] % 2)
