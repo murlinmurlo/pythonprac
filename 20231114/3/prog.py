@@ -1,55 +1,39 @@
-from string import ascii_lowercase
+import string
+
 
 class Alpha:
-    __slots__ = tuple(ascii_lowercase)
+    __slots__ = list(string.ascii_lowercase)
 
     def __init__(self, **kwargs):
-        for key, value in kwargs.items():
-            if key not in self.__slots__:
-                raise AttributeError(f"Invalid attribute: {key}")
-            setattr(self, key, value)
+        for key, val in kwargs.items():
+            setattr(self, key, val)
 
     def __str__(self):
-        fields = []
-        for letter in sorted(self.__slots__):
-            if hasattr(self, letter):
-                fields.append(f"{letter}: {getattr(self, letter)}")
-        return ", ".join(fields)
+        string_list = [f"{slot}: {getattr(self, slot)}"
+             for slot in self.__slots__ if hasattr(self, slot)]
+        return ", ".join(string_list)
 
 
 class AlphaQ:
-    __slots__ = tuple(ascii_lowercase)
+    __slots__ = frozenset(string.ascii_lowercase)
 
     def __init__(self, **kwargs):
-        for key, value in kwargs.items():
-            setattr(self, key, value)
+        for key, val in kwargs.items():
+            if key not in self.__slots__:
+                raise AttributeError
+            setattr(self, key, val)
 
-    def __getattribute__(self, name):
-        if name in set(ascii_lowercase):
-            return object.__getattribute__(self, name)
-        else:
-            raise AttributeError(f"Invalid attribute: {name}")
-
-    def __setattr__(self, name, value):
-        if name in set(ascii_lowercase):
-            object.__setattr__(self, name, value)
-        else:
-            raise AttributeError(f"Invalid attribute: {name}")
+    def __setattr__(self, key, val):
+        if key not in self.__slots__:
+            raise AttributeError
+        super().__setattr__(key, val)
 
     def __str__(self):
-        fields = []
-        for letter in sorted(ascii_lowercase):
-            if hasattr(self, letter):
-                fields.append(f"{letter}: {getattr(self, letter)}")
-        return ", ".join(fields)
+        string_list = [f"{key}: {getattr(self, key)}" for key in sorted(self.__slots__) if hasattr(self, key)]
+        return ", ".join(string_list)
 
 
+import sys
+exec(sys.stdin.read())
 
-
-alp = Alpha(c=10, z=2, a=42)
-alp.e = 123
-print(alp)
-alq = AlphaQ(c=10, z=2, a=42)
-alq.e = 123
-print(alq)
 
