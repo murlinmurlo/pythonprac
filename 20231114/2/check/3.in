@@ -1,0 +1,9 @@
+class MyClass:
+    num = Num()
+
+my_obj = MyClass()
+my_obj.num = 10
+print(my_obj.num)  # Output: 10
+
+my_obj.num = "Hello"
+print(my_obj.num)  # Output: 5 (length of "Hello")

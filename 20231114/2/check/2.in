@@ -1,0 +1,12 @@
+class C:
+    num = Num()
+class A:
+    def __init__(self, a):
+        self.real = a
+    def __len__(self):
+        return 11
+
+
+a, b, c = C(), C(), C()
+a.num, b.num, c.num = A(100500), A(1), [1, 2, 3, 4]
+print(a.num + b.num + c.num)

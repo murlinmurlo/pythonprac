@@ -1,0 +1,8 @@
+@objcount
+class CAC:
+    pass
+
+a, d, e, l = CAC(), CAC(), CAC(), CAC()
+print(CAC.counter)
+c = eval("2+2")
+print(CAC.counter)

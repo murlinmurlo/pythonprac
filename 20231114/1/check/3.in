@@ -1,0 +1,16 @@
+@objcount
+class A:
+    val = 100500
+
+    def __del__(self):
+        print(self.val)
+
+a, b, c = A(), A(), A()
+print(A.counter)
+a = 100500
+print(A.counter)
+
+list = objcount(list)
+d, e, f = list({1, 2, 3}), list(), list((4, 5, 6))
+print(d + e + f)
+print(list.counter)
