@@ -1,0 +1,10 @@
+class MyClass(metaclass=dump):
+    def method1(self, arg1, arg2):
+        return arg1 + arg2
+
+    def method2(self, arg1, arg2, kwarg1=True, kwarg2=False):
+        return arg1 - arg2
+
+obj = MyClass()
+obj.method1(1, 2)
+obj.method2(3, 4, kwarg1=True, kwarg2=False)

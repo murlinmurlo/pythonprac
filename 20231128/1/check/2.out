@@ -1,0 +1,2 @@
+method1: (1, 2), {}
+method2: (3, 4), {'kwarg1': True, 'kwarg2': False}
