@@ -8,8 +8,8 @@ class dump(type):
     @staticmethod
     def wrap_method(name, method):
         def wrapped_method(*args, **kwargs):
-            filtered_args = tuple(arg for arg in args if isinstance(arg, (str, int, float, bool))) 
-            print(f"{name}: {filtered_args}, {kwargs}")
+            args_new = tuple(arg for arg in args if isinstance(arg, (str, int, float, bool))) 
+            print(f"{name}: {args_new}, {kwargs}")
             return method(*args, **kwargs)
         return wrapped_method
 
