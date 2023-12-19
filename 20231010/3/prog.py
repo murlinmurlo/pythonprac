@@ -8,7 +8,6 @@ def print_volume_diagram(container):
     a = container.split('\n')
     total_volume = (len(a)-2) * (len(a[0])-2)
     
-
     r = []
     r += [(len(a))*'#']
     
@@ -39,14 +38,13 @@ def print_volume_diagram(container):
     print('.' * gas + ' ' + f"{str(volume_gas) + '/' + str(total_volume):>{ind1}}")
     print('~' * liquid + ' ' + f"{str(volume_liquid) + '/' + str(total_volume):>{ind2}}")
 
-container = '''########
-#......#
-#~~~~~~#
-#~~~~~~#
-########'''
-    
-#container = input()
+container = []
+while True:
+    line = input()
+    if line == "":
+        break
+    container.append(line)
+
+container = '\n'.join(container)
 
 print_volume_diagram(container)
-
-
