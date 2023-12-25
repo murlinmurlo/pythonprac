@@ -1,0 +1,13 @@
+import asyncio
+import random
+
+async def main(A):
+    tasks, B = await mtasks(A)
+    await asyncio.gather(*tasks)
+    return B
+
+
+A = [random.randint(0, 9) for i in range(random.randint(100, 200))]
+B = asyncio.run(main(A))
+print(B == sorted(A))
+

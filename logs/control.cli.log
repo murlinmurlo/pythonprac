@@ -1,0 +1,78 @@
+23:56:10 24.12.2023 [ depot.database.functions]: |  DEBUG|: Stored UpdateTime: ID=File deliver, timestamp=2023-12-24 23:56:10.766646
+23:56:11 24.12.2023 [             deliver.file]: |   INFO|: Files at /tmp/tmpvjzwmx64...
+23:56:11 24.12.2023 [             deliver.file]: |  DEBUG|: User /tmp/tmpvjzwmx64/personal.toml
+23:56:11 24.12.2023 [             deliver.file]: |  DEBUG|: User /tmp/tmpvjzwmx64/data.db-shm
+23:56:11 24.12.2023 [             deliver.file]: |  DEBUG|: User /tmp/tmpvjzwmx64/personal_final.toml
+23:56:11 24.12.2023 [             deliver.file]: |  DEBUG|: User /tmp/tmpvjzwmx64/data.db
+23:56:11 24.12.2023 [             deliver.file]: |  DEBUG|: User /tmp/tmpvjzwmx64/data.db-wal
+23:56:11 24.12.2023 [             deliver.file]: |  DEBUG|: User /tmp/tmpvjzwmx64/user
+23:56:11 24.12.2023 [ depot.database.functions]: |  DEBUG|: Stored Homework: ID=f./tmp/tmpvjzwmx64/user/3, TASK_ID=3, USER_ID=user, timestamp=2023-12-19 15:45:34.800943
+23:56:11 24.12.2023 [             deliver.file]: |  DEBUG|: Added task 3               for user user           
+23:56:11 24.12.2023 [                     make]: |   INFO|: Parse and store all homeworks...
+23:56:11 24.12.2023 [ depot.database.functions]: |  DEBUG|: Searched for Homework
+23:56:11 24.12.2023 [                     make]: |  DEBUG|: Started check parsing for f./tmp/tmpvjzwmx64/user/3 homework
+23:56:11 24.12.2023 [                     make]: |  DEBUG|: Extracted ['user:3/1', 'user:3/2', 'user:3/3'] checks from f./tmp/tmpvjzwmx64/user/3 homework
+23:56:11 24.12.2023 [ depot.database.functions]: |  DEBUG|: Stored Check: ID=user:3/1, TASK_ID=3, USER_ID=user, category=CheckCategoryEnum.runtime, timestamp=2023-12-19 13:41
+23:56:11 24.12.2023 [ depot.database.functions]: |  DEBUG|: Stored Check: ID=user:3/2, TASK_ID=3, USER_ID=user, category=CheckCategoryEnum.runtime, timestamp=2023-12-19 13:41
+23:56:11 24.12.2023 [ depot.database.functions]: |  DEBUG|: Stored Check: ID=user:3/3, TASK_ID=3, USER_ID=user, category=CheckCategoryEnum.runtime, timestamp=2023-12-19 15:45
+23:56:11 24.12.2023 [                     make]: |  DEBUG|: Started solution parsing for f./tmp/tmpvjzwmx64/user/3 homework
+23:56:11 24.12.2023 [                     make]: |  DEBUG|: Started check parsing for f./tmp/tmpvjzwmx64/user/3 homework
+23:56:11 24.12.2023 [                     make]: |  DEBUG|: Extracted ['user:3/1', 'user:3/2', 'user:3/3'] checks from f./tmp/tmpvjzwmx64/user/3 homework
+23:56:11 24.12.2023 [                     make]: |  DEBUG|: Extracted user:3 solution from f./tmp/tmpvjzwmx64/user/3 homework
+23:56:11 24.12.2023 [ depot.database.functions]: |  DEBUG|: Stored Solution: ID=user:3, TASK_ID=3, USER_ID=user, timestamp=2023-10-20 00:02:26.545765
+23:56:11 24.12.2023 [ depot.database.functions]: |  DEBUG|: Stored UpdateTime: ID=Check run, timestamp=2023-12-24 23:56:11.908966
+23:56:11 24.12.2023 [                     make]: |   INFO|: Run all checks on all solutions...
+23:56:11 24.12.2023 [ depot.database.functions]: |  DEBUG|: Searched for Solution
+23:56:11 24.12.2023 [                     make]: |  DEBUG|: Run all checks of user:3 solution
+23:56:11 24.12.2023 [ depot.database.functions]: |  DEBUG|: Searched for Check
+23:56:11 24.12.2023 [            check.runtime]: |  DEBUG|: /tmp/hworker_check/user.py run
+23:56:12 24.12.2023 [            check.runtime]: |  DEBUG|: Set limits for python runner
+23:56:12 24.12.2023 [ depot.database.functions]: |  DEBUG|: Stored CheckResult: ID=user:3/1@user:3, TASK_ID=3, USER_ID=user, category=CheckCategoryEnum.runtime, rating=1.0, timesta
+23:56:12 24.12.2023 [ depot.database.functions]: |  DEBUG|: Searched for Check
+23:56:12 24.12.2023 [            check.runtime]: |  DEBUG|: /tmp/hworker_check/user.py run
+23:56:12 24.12.2023 [            check.runtime]: |  DEBUG|: Set limits for python runner
+23:56:12 24.12.2023 [ depot.database.functions]: |  DEBUG|: Stored CheckResult: ID=user:3/2@user:3, TASK_ID=3, USER_ID=user, category=CheckCategoryEnum.runtime, rating=1.0, timesta
+23:56:12 24.12.2023 [ depot.database.functions]: |  DEBUG|: Searched for Check
+23:56:12 24.12.2023 [            check.runtime]: |  DEBUG|: /tmp/hworker_check/user.py run
+23:56:12 24.12.2023 [            check.runtime]: |  DEBUG|: Set limits for python runner
+23:56:12 24.12.2023 [ depot.database.functions]: |  DEBUG|: Stored CheckResult: ID=user:3/3@user:3, TASK_ID=3, USER_ID=user, category=CheckCategoryEnum.runtime, rating=1.0, timesta
+23:56:12 24.12.2023 [ depot.database.functions]: |  DEBUG|: Searched for CheckResult
+14:37:08 25.12.2023 [ depot.database.functions]: |  DEBUG|: Stored UpdateTime: ID=File deliver, timestamp=2023-12-25 14:37:08.330397
+14:37:09 25.12.2023 [             deliver.file]: |   INFO|: Files at /tmp/tmpkzert4j4...
+14:37:09 25.12.2023 [             deliver.file]: |  DEBUG|: User /tmp/tmpkzert4j4/personal.toml
+14:37:09 25.12.2023 [             deliver.file]: |  DEBUG|: User /tmp/tmpkzert4j4/data.db-shm
+14:37:09 25.12.2023 [             deliver.file]: |  DEBUG|: User /tmp/tmpkzert4j4/personal_final.toml
+14:37:09 25.12.2023 [             deliver.file]: |  DEBUG|: User /tmp/tmpkzert4j4/data.db
+14:37:09 25.12.2023 [             deliver.file]: |  DEBUG|: User /tmp/tmpkzert4j4/data.db-wal
+14:37:09 25.12.2023 [             deliver.file]: |  DEBUG|: User /tmp/tmpkzert4j4/user
+14:37:09 25.12.2023 [ depot.database.functions]: |  DEBUG|: Stored Homework: ID=f./tmp/tmpkzert4j4/user/3, TASK_ID=3, USER_ID=user, timestamp=2023-12-19 15:45:34.800943
+14:37:09 25.12.2023 [             deliver.file]: |  DEBUG|: Added task 3               for user user           
+14:37:09 25.12.2023 [                     make]: |   INFO|: Parse and store all homeworks...
+14:37:09 25.12.2023 [ depot.database.functions]: |  DEBUG|: Searched for Homework
+14:37:09 25.12.2023 [                     make]: |  DEBUG|: Started check parsing for f./tmp/tmpkzert4j4/user/3 homework
+14:37:09 25.12.2023 [                     make]: |  DEBUG|: Extracted ['user:3/1', 'user:3/2', 'user:3/3'] checks from f./tmp/tmpkzert4j4/user/3 homework
+14:37:09 25.12.2023 [ depot.database.functions]: |  DEBUG|: Stored Check: ID=user:3/1, TASK_ID=3, USER_ID=user, category=CheckCategoryEnum.runtime, timestamp=2023-12-19 13:41
+14:37:09 25.12.2023 [ depot.database.functions]: |  DEBUG|: Stored Check: ID=user:3/2, TASK_ID=3, USER_ID=user, category=CheckCategoryEnum.runtime, timestamp=2023-12-19 13:41
+14:37:09 25.12.2023 [ depot.database.functions]: |  DEBUG|: Stored Check: ID=user:3/3, TASK_ID=3, USER_ID=user, category=CheckCategoryEnum.runtime, timestamp=2023-12-19 15:45
+14:37:09 25.12.2023 [                     make]: |  DEBUG|: Started solution parsing for f./tmp/tmpkzert4j4/user/3 homework
+14:37:09 25.12.2023 [                     make]: |  DEBUG|: Started check parsing for f./tmp/tmpkzert4j4/user/3 homework
+14:37:09 25.12.2023 [                     make]: |  DEBUG|: Extracted ['user:3/1', 'user:3/2', 'user:3/3'] checks from f./tmp/tmpkzert4j4/user/3 homework
+14:37:09 25.12.2023 [                     make]: |  DEBUG|: Extracted user:3 solution from f./tmp/tmpkzert4j4/user/3 homework
+14:37:09 25.12.2023 [ depot.database.functions]: |  DEBUG|: Stored Solution: ID=user:3, TASK_ID=3, USER_ID=user, timestamp=2023-10-20 00:02:26.545765
+14:37:09 25.12.2023 [ depot.database.functions]: |  DEBUG|: Stored UpdateTime: ID=Check run, timestamp=2023-12-25 14:37:09.357842
+14:37:09 25.12.2023 [                     make]: |   INFO|: Run all checks on all solutions...
+14:37:09 25.12.2023 [ depot.database.functions]: |  DEBUG|: Searched for Solution
+14:37:09 25.12.2023 [                     make]: |  DEBUG|: Run all checks of user:3 solution
+14:37:09 25.12.2023 [ depot.database.functions]: |  DEBUG|: Searched for Check
+14:37:09 25.12.2023 [            check.runtime]: |  DEBUG|: /tmp/hworker_check/user.py run
+14:37:09 25.12.2023 [            check.runtime]: |  DEBUG|: Set limits for python runner
+14:37:09 25.12.2023 [ depot.database.functions]: |  DEBUG|: Stored CheckResult: ID=user:3/1@user:3, TASK_ID=3, USER_ID=user, category=CheckCategoryEnum.runtime, rating=1.0, timesta
+14:37:09 25.12.2023 [ depot.database.functions]: |  DEBUG|: Searched for Check
+14:37:09 25.12.2023 [            check.runtime]: |  DEBUG|: /tmp/hworker_check/user.py run
+14:37:09 25.12.2023 [            check.runtime]: |  DEBUG|: Set limits for python runner
+14:37:09 25.12.2023 [ depot.database.functions]: |  DEBUG|: Stored CheckResult: ID=user:3/2@user:3, TASK_ID=3, USER_ID=user, category=CheckCategoryEnum.runtime, rating=1.0, timesta
+14:37:09 25.12.2023 [ depot.database.functions]: |  DEBUG|: Searched for Check
+14:37:09 25.12.2023 [            check.runtime]: |  DEBUG|: /tmp/hworker_check/user.py run
+14:37:09 25.12.2023 [            check.runtime]: |  DEBUG|: Set limits for python runner
+14:37:09 25.12.2023 [ depot.database.functions]: |  DEBUG|: Stored CheckResult: ID=user:3/3@user:3, TASK_ID=3, USER_ID=user, category=CheckCategoryEnum.runtime, rating=1.0, timesta
+14:37:09 25.12.2023 [ depot.database.functions]: |  DEBUG|: Searched for CheckResult
